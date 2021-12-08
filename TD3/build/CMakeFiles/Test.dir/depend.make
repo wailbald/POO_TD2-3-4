@@ -3,6 +3,7 @@
 
 CMakeFiles/Test.dir/src/Equation.cpp.o: ../src/Equation.cpp
 CMakeFiles/Test.dir/src/Equation.cpp.o: ../src/Equation.h
+CMakeFiles/Test.dir/src/Equation.cpp.o: ../src/Variable.h
 
 CMakeFiles/Test.dir/src/ITimeDiscretization.cpp.o: ../src/ITimeDiscretization.cpp
 CMakeFiles/Test.dir/src/ITimeDiscretization.cpp.o: ../src/ITimeDiscretization.h
@@ -12,12 +13,17 @@ CMakeFiles/Test.dir/src/Problem.cpp.o: ../src/ITimeDiscretization.h
 CMakeFiles/Test.dir/src/Problem.cpp.o: ../src/Problem.cpp
 CMakeFiles/Test.dir/src/Problem.cpp.o: ../src/Problem.h
 CMakeFiles/Test.dir/src/Problem.cpp.o: ../src/UniformTimeDiscretization.h
+CMakeFiles/Test.dir/src/Problem.cpp.o: ../src/Variable.h
 
 CMakeFiles/Test.dir/src/UniformTimeDiscretization.cpp.o: ../src/UniformTimeDiscretization.cpp
+
+CMakeFiles/Test.dir/src/Variable.cpp.o: ../src/Variable.cpp
+CMakeFiles/Test.dir/src/Variable.cpp.o: ../src/Variable.h
 
 CMakeFiles/Test.dir/src/test.cpp.o: ../src/Equation.h
 CMakeFiles/Test.dir/src/test.cpp.o: ../src/ITimeDiscretization.h
 CMakeFiles/Test.dir/src/test.cpp.o: ../src/Problem.h
 CMakeFiles/Test.dir/src/test.cpp.o: ../src/UniformTimeDiscretization.h
+CMakeFiles/Test.dir/src/test.cpp.o: ../src/Variable.h
 CMakeFiles/Test.dir/src/test.cpp.o: ../src/test.cpp
 

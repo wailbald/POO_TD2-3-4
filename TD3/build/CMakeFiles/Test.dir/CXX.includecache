@@ -6,41 +6,55 @@
 
 #IncludeRegexTransform: 
 
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/Equation.cpp
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Equation.cpp
 Equation.h
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/Equation.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Equation.h
 
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/Equation.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Equation.h
 iostream
 -
+Variable.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Variable.h
 
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/ITimeDiscretization.cpp
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/ITimeDiscretization.cpp
 ITimeDiscretization.h
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/ITimeDiscretization.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/ITimeDiscretization.h
 
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/ITimeDiscretization.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/ITimeDiscretization.h
 iostream
 -
+cmath
+-
 
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/Problem.cpp
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Problem.cpp
 Problem.h
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/Problem.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Problem.h
 
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/Problem.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Problem.h
 Equation.h
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/Equation.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Equation.h
 UniformTimeDiscretization.h
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/UniformTimeDiscretization.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/UniformTimeDiscretization.h
+Variable.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Variable.h
 
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/UniformTimeDiscretization.cpp
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/UniformTimeDiscretization.cpp
 
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/UniformTimeDiscretization.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/UniformTimeDiscretization.h
 ITimeDiscretization.h
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/ITimeDiscretization.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/ITimeDiscretization.h
 
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/test.cpp
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Variable.cpp
+Variable.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Variable.h
+
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Variable.h
+vector
+-
+
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/test.cpp
 Problem.h
-/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/src/Problem.h
+/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/src/Problem.h
 stdio.h
 -
 gtest/gtest.h

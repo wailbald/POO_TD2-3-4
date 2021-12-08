@@ -1,3 +1,4 @@
+#pragma once
 #include <vector>
 
 class Variable
@@ -8,5 +9,6 @@ class Variable
 	public:
 		Variable();
 		Variable(unsigned taille);
-		Variable(std::vector<double> v);
+		double& operator[](unsigned t);
+		std::vector<double> get_v();
 };

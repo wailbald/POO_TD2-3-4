@@ -1,5 +1,5 @@
-if(EXISTS "/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/build/Test[1]_tests.cmake")
-  include("/home/chps/CHPS21-22/POOCS/TD1-POO/TD2/build/Test[1]_tests.cmake")
+if(EXISTS "/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/build/Test[1]_tests.cmake")
+  include("/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD3/build/Test[1]_tests.cmake")
 else()
   add_test(Test_NOT_BUILT Test_NOT_BUILT)
 endif()

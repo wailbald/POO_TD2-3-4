@@ -9,6 +9,7 @@ set(SOURCE
 	${CMAKE_CURRENT_SOURCE_DIR}/src/Equation.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/ITimeDiscretization.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/UniformTimeDiscretization.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/Variable.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
 )
 
@@ -18,6 +19,7 @@ set(TEST_SRC
 	${CMAKE_CURRENT_SOURCE_DIR}/src/Equation.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/ITimeDiscretization.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/UniformTimeDiscretization.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/Variable.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/test.cpp
 )
 
@@ -27,6 +29,7 @@ set(HEADERS
 	${CMAKE_CURRENT_SOURCE_DIR}/src/Equation.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/ITimeDiscretization.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/UniformTimeDiscretization.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/Variable.h
 )
 add_executable(solve_Problem ${SOURCE} ${HEADERS})
 add_executable(Test ${TEST_SRC} ${HEADERS})

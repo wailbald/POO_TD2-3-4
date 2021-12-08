@@ -11,7 +11,7 @@ int main(int argc, char** argv)
 
 	UniformTimeDiscretization *time = new UniformTimeDiscretization(0, 4, 1);
 
-	problem prob(2.0, 4.0, time);
+	problem prob(2.0, 4.0, 0.0, time);
 
 	prob.solve();
 

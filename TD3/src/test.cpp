@@ -4,21 +4,17 @@
 
 TEST(UnitaryTest,EquationTest)
 {
-	equation eq(2,4);
-	equation eq2(eq);
+	equation eq(2,4,0);
 
 	EXPECT_EQ(2, eq.get_val_a());
 	EXPECT_EQ(4, eq.get_val_b());
-
-	EXPECT_EQ(2, eq2.get_val_a());
-	EXPECT_EQ(4, eq2.get_val_b());
+	EXPECT_EQ(0, eq.get_val_c());
 }
 
 TEST(UnitaryTest, ProblemTest)
 {
-	equation eq(2,4);
 	UniformTimeDiscretization *time = new UniformTimeDiscretization(0, 4, 1);
-	problem prob(eq, time);
+	problem prob(2, 4, 0, time);
 
 	EXPECT_EQ(1, prob.solve());
 }
