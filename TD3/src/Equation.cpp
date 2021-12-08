@@ -30,11 +30,7 @@ double equation::get_val_b()
 
 double equation::compute()
 {
-	double result;
-
-
-
-	return result;
+	return 1.0;
 }
 
 std::ostream &operator<<(std::ostream &out, equation eq)

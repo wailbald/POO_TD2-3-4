@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 class ITimeDiscretization
 {
@@ -14,4 +15,5 @@ class ITimeDiscretization
 		unsigned get_debut();
 		unsigned get_fin();
 		unsigned get_pas();
+		unsigned nb_point();
 };

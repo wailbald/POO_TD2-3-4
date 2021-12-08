@@ -1,0 +1,6 @@
+
+
+Variable::Variable()
+{
+	
+}

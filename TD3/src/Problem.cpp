@@ -29,12 +29,17 @@ problem::~problem()
 	delete(time);
 }
 
+equation problem::get_eq()
+{
+	return eq;
+}
+
 double problem::solve()
 {
-	for(int i = this->time->get_debut(); i < this->time->get_fin(); i += this->time->get_pas())
+	for(int i = this->time->get_debut(); i <= this->time->get_fin(); i += this->time->get_pas())
 	{
 		std::cout << "compute equation at time : " << i << std::endl;
+		this->result = this->eq.compute();
 	}
-	//this.result = this.eq.equation::compute();
-	//return this.result;
+	return this->result;
 }

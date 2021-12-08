@@ -14,3 +14,8 @@ unsigned ITimeDiscretization::get_pas()
 {
 	return this->pas;
 }
+
+unsigned ITimeDiscretization::nb_point()
+{
+	return floor((this->fin - this->debut) / this->pas);
+}
