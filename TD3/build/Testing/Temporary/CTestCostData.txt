@@ -1,4 +1,0 @@
-UnitaryTest.EquationTest 2 0.000901103
-UnitaryTest.ProblemTest 2 0.000970006
-test 3 0.000487645
----
