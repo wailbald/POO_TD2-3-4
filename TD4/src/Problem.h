@@ -3,6 +3,7 @@
 #include "Equation.h"
 #include "UniformTimeDiscretization.h"
 #include "Variable.h"
+#include "Timer.h"
 
 class problem
 {

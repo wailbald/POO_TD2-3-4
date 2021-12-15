@@ -4,16 +4,16 @@
 
 int main(int argc, char** argv)
 {
-	if(argc != 4)
-	{
-		std::cout << "Wrong number of argument usage : " << argv[0] << " a b"<< std::endl;
-		return 1;
-	}
-	double a = atof(argv[1]);
-	double b = atof(argv[2]);
-	double c = atof(argv[3]);
-	UniformTimeDiscretization *time = new UniformTimeDiscretization(1, 1000, 1);
+	double a = 2;
+	double b = 2;
+	double c = 2;
+	UniformTimeDiscretization *time = new UniformTimeDiscretization(1, 10, 1);
 	problem prob(a, b, c, time);
 	prob.solve();
 	return 0;
+
+	/*Timer t = Timer();
+	t->start();
+	t->stop();
+	t->print();*/
 }

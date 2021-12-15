@@ -5,10 +5,9 @@
 
 class Variable
 {
-	private:
+	public:
 		std::vector<double> v;
 
-	public:
 		Variable();
 		Variable(unsigned taille);
 		double& operator[](size_t t);

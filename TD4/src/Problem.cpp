@@ -38,11 +38,27 @@ Variable problem::get_var()
 
 Variable problem::solve()
 {
+	Timer t;
 	eq.compute_initial_condition(this->time->get_debut(), this->var);
+	Variable var2;
+
+	t.start();
 	for(double i = this->time->get_debut(); i <= this->time->get_fin(); i += this->time->get_pas())
 	{
-		std::cout << "compute equation at time : " << i << std::endl;
+		auto lambda = [](Variable &var2, double i)
+		{
+			var2.v.push_back(((i*i)/2) + i);
+		};
+
+		lambda(var2, i);
+
+		//std::cout << "compute equation at time : " << i << std::endl;
 		eq.compute(i, time->get_pas(), this->var, *time);
 	}
-	return this->var;
+
+	t.stop();
+	std::cout << t << std::endl;
+	std::cout << var << std::endl;
+	std::cout << var2 << std::endl;
+	return var2;
 }
