@@ -4,6 +4,7 @@ project(solve_Problem)
 set(CMAKE_BUILD_TYPE Release)
 
 find_package(Threads REQUIRED)
+find_package(GTest REQUIRED)
 
 set(SOURCE
 	${SOURCE}
@@ -38,5 +39,12 @@ set(HEADERS
 )
 
 add_executable(solve_Problem ${SOURCE} ${HEADERS})
+add_executable(Test ${TEST_SRC} ${HEADERS})
 
 target_link_libraries(solve_Problem Threads::Threads)
+target_link_libraries(Test PUBLIC GTest::GTest)
+target_link_libraries(Test PUBLIC GTest::Main)
+
+enable_testing()
+add_test(test solve_Problem)
+gtest_discover_tests(Test) 

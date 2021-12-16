@@ -5,8 +5,7 @@
 int main(int argc, char** argv)
 {
 	Timer t = Timer();
-	t.start();
-	
+	Timer t2 = Timer();
 
 	double a = 2;
 	double b = 2;
@@ -18,14 +17,22 @@ int main(int argc, char** argv)
 	UniformTimeDiscretization *time2 = new UniformTimeDiscretization(1, 10000, 1);
 	problem prob2(a, b, c, time2);
 
-	prob.solve();
+	t.start();
 
-	prob2.solve_parallel();
+	prob.solve();
 
 	t.stop();
 
-	std::cout <<  "temps total du programme" << std::endl;
+	t2.start();
+	prob2.solve_parallel();
+	t2.stop();
+
+
+	std::cout <<  "temps total du programme sans thread" << std::endl;
 	std::cout << t << std::endl;
+
+	std::cout <<  "temps total du programme avec thread" << std::endl;
+	std::cout << t2 << std::endl;
 
 	return 0;
 }

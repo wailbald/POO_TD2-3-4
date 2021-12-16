@@ -26,5 +26,11 @@ CMakeFiles/Test.dir/src/Variable.cpp.o: ../src/ITimeDiscretization.h
 CMakeFiles/Test.dir/src/Variable.cpp.o: ../src/Variable.cpp
 CMakeFiles/Test.dir/src/Variable.cpp.o: ../src/Variable.h
 
+CMakeFiles/Test.dir/src/test.cpp.o: ../src/Equation.h
+CMakeFiles/Test.dir/src/test.cpp.o: ../src/ITimeDiscretization.h
+CMakeFiles/Test.dir/src/test.cpp.o: ../src/Problem.h
+CMakeFiles/Test.dir/src/test.cpp.o: ../src/Timer.h
+CMakeFiles/Test.dir/src/test.cpp.o: ../src/UniformTimeDiscretization.h
+CMakeFiles/Test.dir/src/test.cpp.o: ../src/Variable.h
 CMakeFiles/Test.dir/src/test.cpp.o: ../src/test.cpp
 

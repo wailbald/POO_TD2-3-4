@@ -60,7 +60,7 @@ Variable problem::solve()
 	t.stop();
 	var.write(this->time);
 
-	std::cout << "temps boucle :" << std::endl;
+	std::cout << "temps boucle sans thread:" << std::endl;
 	std::cout << t << std::endl;
 
 	/*std::cout << var << std::endl;
@@ -104,13 +104,9 @@ Variable problem::solve_parallel()
     second_thread.join();
 
     t.stop();
-	var.write(this->time);
 
-	std::cout << "temps boucle :" << std::endl;
+	std::cout << "temps boucle avec thread :" << std::endl;
 	std::cout << t << std::endl;
-
-	/*std::cout << var << std::endl;
-	std::cout << var2 << std::endl;*/
 
 	return var2;
 

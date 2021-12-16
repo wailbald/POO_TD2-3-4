@@ -1,0 +1,24 @@
+Start testing: Dec 16 18:59 CET
+----------------------------------------------------------
+1/1 Testing: test
+1/1 Test: test
+Command: "/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/build/solve_Problem"
+Directory: /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/build
+"test" start time: Dec 16 18:59 CET
+Output:
+----------------------------------------------------------
+temps boucle :
+resultat = 246798 µs
+temps boucle :
+resultat = 209742 µs
+temps total du programme
+resultat = 481135 µs
+<end of output>
+Test time =   0.48 sec
+----------------------------------------------------------
+Test Passed.
+"test" end time: Dec 16 18:59 CET
+"test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 16 18:59 CET

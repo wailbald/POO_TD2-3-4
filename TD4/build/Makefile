@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/build/CMakeFiles /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/build/CMakeFiles/progress.marks
@@ -111,6 +122,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Test
+
+# Build rule for target.
+Test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Test
+.PHONY : Test
+
+# fast build rule for target.
+Test/fast:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
+.PHONY : Test/fast
+
+#=============================================================================
 # Target rules for targets named solve_Problem
 
 # Build rule for target.
@@ -129,6 +153,7 @@ src/Equation.o: src/Equation.cpp.o
 
 # target to build an object file
 src/Equation.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Equation.cpp.o
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Equation.cpp.o
 .PHONY : src/Equation.cpp.o
 
@@ -138,6 +163,7 @@ src/Equation.i: src/Equation.cpp.i
 
 # target to preprocess a source file
 src/Equation.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Equation.cpp.i
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Equation.cpp.i
 .PHONY : src/Equation.cpp.i
 
@@ -147,6 +173,7 @@ src/Equation.s: src/Equation.cpp.s
 
 # target to generate assembly for a file
 src/Equation.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Equation.cpp.s
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Equation.cpp.s
 .PHONY : src/Equation.cpp.s
 
@@ -156,6 +183,7 @@ src/ITimeDiscretization.o: src/ITimeDiscretization.cpp.o
 
 # target to build an object file
 src/ITimeDiscretization.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/ITimeDiscretization.cpp.o
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/ITimeDiscretization.cpp.o
 .PHONY : src/ITimeDiscretization.cpp.o
 
@@ -165,6 +193,7 @@ src/ITimeDiscretization.i: src/ITimeDiscretization.cpp.i
 
 # target to preprocess a source file
 src/ITimeDiscretization.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/ITimeDiscretization.cpp.i
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/ITimeDiscretization.cpp.i
 .PHONY : src/ITimeDiscretization.cpp.i
 
@@ -174,6 +203,7 @@ src/ITimeDiscretization.s: src/ITimeDiscretization.cpp.s
 
 # target to generate assembly for a file
 src/ITimeDiscretization.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/ITimeDiscretization.cpp.s
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/ITimeDiscretization.cpp.s
 .PHONY : src/ITimeDiscretization.cpp.s
 
@@ -183,6 +213,7 @@ src/Problem.o: src/Problem.cpp.o
 
 # target to build an object file
 src/Problem.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Problem.cpp.o
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Problem.cpp.o
 .PHONY : src/Problem.cpp.o
 
@@ -192,6 +223,7 @@ src/Problem.i: src/Problem.cpp.i
 
 # target to preprocess a source file
 src/Problem.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Problem.cpp.i
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Problem.cpp.i
 .PHONY : src/Problem.cpp.i
 
@@ -201,6 +233,7 @@ src/Problem.s: src/Problem.cpp.s
 
 # target to generate assembly for a file
 src/Problem.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Problem.cpp.s
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Problem.cpp.s
 .PHONY : src/Problem.cpp.s
 
@@ -210,6 +243,7 @@ src/Timer.o: src/Timer.cpp.o
 
 # target to build an object file
 src/Timer.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Timer.cpp.o
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Timer.cpp.o
 .PHONY : src/Timer.cpp.o
 
@@ -219,6 +253,7 @@ src/Timer.i: src/Timer.cpp.i
 
 # target to preprocess a source file
 src/Timer.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Timer.cpp.i
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Timer.cpp.i
 .PHONY : src/Timer.cpp.i
 
@@ -228,6 +263,7 @@ src/Timer.s: src/Timer.cpp.s
 
 # target to generate assembly for a file
 src/Timer.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Timer.cpp.s
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Timer.cpp.s
 .PHONY : src/Timer.cpp.s
 
@@ -237,6 +273,7 @@ src/UniformTimeDiscretization.o: src/UniformTimeDiscretization.cpp.o
 
 # target to build an object file
 src/UniformTimeDiscretization.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/UniformTimeDiscretization.cpp.o
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/UniformTimeDiscretization.cpp.o
 .PHONY : src/UniformTimeDiscretization.cpp.o
 
@@ -246,6 +283,7 @@ src/UniformTimeDiscretization.i: src/UniformTimeDiscretization.cpp.i
 
 # target to preprocess a source file
 src/UniformTimeDiscretization.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/UniformTimeDiscretization.cpp.i
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/UniformTimeDiscretization.cpp.i
 .PHONY : src/UniformTimeDiscretization.cpp.i
 
@@ -255,6 +293,7 @@ src/UniformTimeDiscretization.s: src/UniformTimeDiscretization.cpp.s
 
 # target to generate assembly for a file
 src/UniformTimeDiscretization.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/UniformTimeDiscretization.cpp.s
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/UniformTimeDiscretization.cpp.s
 .PHONY : src/UniformTimeDiscretization.cpp.s
 
@@ -264,6 +303,7 @@ src/Variable.o: src/Variable.cpp.o
 
 # target to build an object file
 src/Variable.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Variable.cpp.o
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Variable.cpp.o
 .PHONY : src/Variable.cpp.o
 
@@ -273,6 +313,7 @@ src/Variable.i: src/Variable.cpp.i
 
 # target to preprocess a source file
 src/Variable.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Variable.cpp.i
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Variable.cpp.i
 .PHONY : src/Variable.cpp.i
 
@@ -282,6 +323,7 @@ src/Variable.s: src/Variable.cpp.s
 
 # target to generate assembly for a file
 src/Variable.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/Variable.cpp.s
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/Variable.cpp.s
 .PHONY : src/Variable.cpp.s
 
@@ -312,6 +354,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/solve_Problem.dir/build.make CMakeFiles/solve_Problem.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/test.o: src/test.cpp.o
+
+.PHONY : src/test.o
+
+# target to build an object file
+src/test.cpp.o:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/test.cpp.o
+.PHONY : src/test.cpp.o
+
+src/test.i: src/test.cpp.i
+
+.PHONY : src/test.i
+
+# target to preprocess a source file
+src/test.cpp.i:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/test.cpp.i
+.PHONY : src/test.cpp.i
+
+src/test.s: src/test.cpp.s
+
+.PHONY : src/test.s
+
+# target to generate assembly for a file
+src/test.cpp.s:
+	$(MAKE) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/test.cpp.s
+.PHONY : src/test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -320,6 +389,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... Test"
 	@echo "... solve_Problem"
 	@echo "... src/Equation.o"
 	@echo "... src/Equation.i"
@@ -342,6 +413,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/test.o"
+	@echo "... src/test.i"
+	@echo "... src/test.s"
 .PHONY : help
 
 
