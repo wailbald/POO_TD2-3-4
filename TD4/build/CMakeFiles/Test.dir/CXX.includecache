@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Equation.cpp
+Equation.h
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Equation.h
+
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Equation.h
 iostream
 -
 Variable.h
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Variable.h
+ITimeDiscretization.h
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/ITimeDiscretization.h
+
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/ITimeDiscretization.cpp
 ITimeDiscretization.h
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/ITimeDiscretization.h
 
@@ -27,6 +35,8 @@ Problem.h
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Problem.h
 cstddef
 -
+thread
+-
 Equation.h
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Equation.h
 UniformTimeDiscretization.h
@@ -36,15 +46,25 @@ Variable.h
 Timer.h
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Timer.h
 
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Timer.cpp
+Timer.h
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Timer.h
+
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Timer.h
 chrono
 -
 iostream
 -
 
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/UniformTimeDiscretization.cpp
+
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/UniformTimeDiscretization.h
 ITimeDiscretization.h
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/ITimeDiscretization.h
+
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Variable.cpp
+Variable.h
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Variable.h
 
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Variable.h
 vector
@@ -53,4 +73,10 @@ cstddef
 -
 iostream
 -
+fstream
+-
+ITimeDiscretization.h
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/ITimeDiscretization.h
+
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/test.cpp
 

@@ -22,6 +22,7 @@ CMakeFiles/Test.dir/src/Timer.cpp.o: ../src/Timer.h
 
 CMakeFiles/Test.dir/src/UniformTimeDiscretization.cpp.o: ../src/UniformTimeDiscretization.cpp
 
+CMakeFiles/Test.dir/src/Variable.cpp.o: ../src/ITimeDiscretization.h
 CMakeFiles/Test.dir/src/Variable.cpp.o: ../src/Variable.cpp
 CMakeFiles/Test.dir/src/Variable.cpp.o: ../src/Variable.h
 

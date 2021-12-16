@@ -17,6 +17,6 @@ void Timer::stop()
 
 std::ostream &operator<<(std::ostream &out, Timer t)
 {
-	out << "resultat = " << std::chrono::duration_cast<std::chrono::microseconds>(t.fin - t.debut).count() << "µs ≈ ";
+	out << "resultat = " << std::chrono::duration_cast<std::chrono::microseconds>(t.fin - t.debut).count() << " µs";
 	return out;
 }

@@ -3,6 +3,8 @@ project(solve_Problem)
 
 set(CMAKE_BUILD_TYPE Release)
 
+find_package(Threads REQUIRED)
+
 set(SOURCE
 	${SOURCE}
 	${CMAKE_CURRENT_SOURCE_DIR}/src/Problem.cpp
@@ -34,5 +36,7 @@ set(HEADERS
 	${CMAKE_CURRENT_SOURCE_DIR}/src/Variable.h
 	${CMAKE_CURRENT_SOURCE_DIR}/src/Timer.h
 )
+
 add_executable(solve_Problem ${SOURCE} ${HEADERS})
-add_executable(Test ${TEST_SRC} ${HEADERS})
+
+target_link_libraries(solve_Problem Threads::Threads)

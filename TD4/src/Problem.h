@@ -1,5 +1,6 @@
 #pragma once
 #include <cstddef>
+#include <thread>
 #include "Equation.h"
 #include "UniformTimeDiscretization.h"
 #include "Variable.h"
@@ -18,6 +19,7 @@ class problem
 		problem(const problem &prob);
 		~problem();
 		Variable solve();
+		Variable solve_parallel();
 		equation get_eq();
 		Variable get_var();
 };

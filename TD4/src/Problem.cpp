@@ -43,6 +43,7 @@ Variable problem::solve()
 	Variable var2;
 
 	t.start();
+
 	for(double i = this->time->get_debut(); i <= this->time->get_fin(); i += this->time->get_pas())
 	{
 		auto lambda = [](Variable &var2, double i)
@@ -57,8 +58,60 @@ Variable problem::solve()
 	}
 
 	t.stop();
+	var.write(this->time);
+
+	std::cout << "temps boucle :" << std::endl;
 	std::cout << t << std::endl;
-	std::cout << var << std::endl;
-	std::cout << var2 << std::endl;
+
+	/*std::cout << var << std::endl;
+	std::cout << var2 << std::endl;*/
+
 	return var2;
+}
+
+Variable problem::solve_parallel()
+{
+	Timer t;
+	Variable var2;
+	eq.compute_initial_condition(this->time->get_debut(), this->var);
+
+	t.start();
+
+	std::thread first_thread([&](){
+
+		for(double i = this->time->get_debut(); i <= this->time->get_fin(); i += this->time->get_pas())
+		{
+			eq.compute(i, time->get_pas(), this->var, *time);
+		}
+
+    });
+
+    std::thread second_thread([&](){
+
+		for(double i = this->time->get_debut(); i <= this->time->get_fin(); i += this->time->get_pas())
+		{
+			auto lambda = [](Variable &var2, double i)
+			{
+				var2.v.push_back(((i*i)/2) + i);
+			};
+
+			lambda(var2, i);
+		}
+
+    });
+
+    first_thread.join();
+    second_thread.join();
+
+    t.stop();
+	var.write(this->time);
+
+	std::cout << "temps boucle :" << std::endl;
+	std::cout << t << std::endl;
+
+	/*std::cout << var << std::endl;
+	std::cout << var2 << std::endl;*/
+
+	return var2;
+
 }

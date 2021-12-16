@@ -22,6 +22,7 @@ CMakeFiles/solve_Problem.dir/src/Timer.cpp.o: ../src/Timer.h
 
 CMakeFiles/solve_Problem.dir/src/UniformTimeDiscretization.cpp.o: ../src/UniformTimeDiscretization.cpp
 
+CMakeFiles/solve_Problem.dir/src/Variable.cpp.o: ../src/ITimeDiscretization.h
 CMakeFiles/solve_Problem.dir/src/Variable.cpp.o: ../src/Variable.cpp
 CMakeFiles/solve_Problem.dir/src/Variable.cpp.o: ../src/Variable.h
 

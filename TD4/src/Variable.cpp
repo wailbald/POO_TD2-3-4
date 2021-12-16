@@ -19,6 +19,21 @@ std::vector<double> Variable::get_v()
 	return this->v;
 }
 
+void Variable::write(ITimeDiscretization *temps)
+{
+	std::ofstream F;
+	F.open("resultat.txt");
+
+	size_t iter = 0;
+	for(double i = temps->get_debut(); i < temps->get_fin(); i += temps->get_pas())
+	{
+		F << v[iter] << " " << i << "\n";
+		iter++;
+	}
+
+	F.close();
+}
+
 std::ostream &operator<<(std::ostream &out, Variable var)
 {
 	for(size_t i = 0; i < var.get_v().size(); i++)

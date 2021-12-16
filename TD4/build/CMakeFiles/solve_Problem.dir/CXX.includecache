@@ -23,6 +23,8 @@ cmath
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Problem.h
 cstddef
 -
+thread
+-
 Equation.h
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/Equation.h
 UniformTimeDiscretization.h
@@ -49,6 +51,10 @@ cstddef
 -
 iostream
 -
+fstream
+-
+ITimeDiscretization.h
+/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/ITimeDiscretization.h
 
 /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/src/main.cpp
 Problem.h

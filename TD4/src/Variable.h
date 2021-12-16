@@ -2,6 +2,8 @@
 #include <vector>
 #include <cstddef>
 #include <iostream>
+#include <fstream>
+#include "ITimeDiscretization.h"
 
 class Variable
 {
@@ -10,6 +12,7 @@ class Variable
 
 		Variable();
 		Variable(unsigned taille);
+		void write(ITimeDiscretization *temps);
 		double& operator[](size_t t);
 		std::vector<double> get_v();
 };
