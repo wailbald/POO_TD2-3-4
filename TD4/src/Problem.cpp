@@ -92,7 +92,7 @@ Variable problem::solve_parallel()
 		{
 			auto lambda = [](Variable &var2, double i)
 			{
-				var2.v.push_back(((i*i)/2) + i);
+				var2.v.push_back(((i*i)/2) + var2.v[0]);
 			};
 
 			lambda(var2, i);

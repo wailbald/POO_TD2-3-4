@@ -17,7 +17,7 @@ double equation::get_val_c()
 
 double equation::compute(double t, double pas, Variable &var, ITimeDiscretization time)
 {
-	var[time.get_iter(t)+1] = var[time.get_iter(t)] + pas;
+	var[time.get_iter(t)+1] = var[time.get_iter(t)] + t*pas;
 	return var[time.get_iter(t)+1];
 }
 

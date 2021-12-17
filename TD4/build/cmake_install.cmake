@@ -1,4 +1,4 @@
-# Install script for directory: /home/wailbald/Bureau/POO/POO_TD2-3-4/TD4
+# Install script for directory: /home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wailbald/Bureau/POO/POO_TD2-3-4/TD4/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/chps/CHPS21-22/POOCS/POO_TD2-3-4/TD4/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
